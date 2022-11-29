@@ -19,17 +19,20 @@ export var newsList = [
 export function search() {
   //inputValue is the variable that contains the search string
   const inputValue = document.getElementById("search-input").value;
-
   //Write your code here for the search function
-
-  return newsList;
+  return alert(newsList.filter((el) => el.toLowerCase().includes(inputValue.toLowerCase())));
 }
 
 export function sort(type) {
   if (type == "ascending") {
     //Write your code here for sorting (ascending)
-  } else {
+    newsList.sort();
+  } else if (type == "descending"){    
+    newsList.reverse();
     //Write your code here for sorting (descending)
+  } else {
+    (type !== "ascending" || type !== "descending")
+    newsList.sort();
   }
 
   return newsList;
