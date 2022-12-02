@@ -5,11 +5,9 @@ import { sort, search, newsList } from "./main.js";
 //    expect(search(newsList)).toBe("I am a cool web developer");
 // });
 
-test("search function test", () => {
-    expect(JSON.stringify(search)).toBe();
-  })
-
-
+test("search function testing", () => {
+    expect(JSON.stringify(search)).toBeUndefined();
+})
 test('if search has an undefined input', () => {
   expect(search.newsList).toBeUndefined();
 })
