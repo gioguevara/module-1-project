@@ -20,7 +20,7 @@ export function search() {
   //inputValue is the variable that contains the search string
   const inputValue = document.getElementById("search-input").value;
   //Write your code here for the search function
-  return alert(newsList.filter((el) => el.toLowerCase().includes(inputValue.toLowerCase())));
+  return newsList.filter((el) => el.toLowerCase().includes(inputValue.toLowerCase()));
 }
 
 export function sort(type) {
